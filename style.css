@@ -1,0 +1,211 @@
+
+body{
+    background: url(img/background1.jpg) center center fixed;
+}.addresstitle {
+    padding: 10px 5px 10px 0px;
+    margin: 10px 150px 20px 150px ;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    background-color:black; 
+    border-radius: 10px;
+    border-style: double; 
+    border-color: rgb(109, 91, 136);
+}
+.searchdiv {
+ margin-top:0px;
+}
+.nav-list > button {
+    width: 20%;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    margin: 10px 150px 20px 150px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: black; 
+    }
+
+.searchdiv{
+        background-color: black;
+        text-align: left;
+        margin-top: 5px;
+        border-radius: 10px; 
+    }
+
+.addcontactdiv{
+        background-color: black;
+        color: black;
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+        border-radius: 20px;
+    }
+.panel{
+    background-color: white;
+    max-width:50%;
+    margin-top: 5px;
+    box-sizing: content-box;
+    border-radius: 15px;
+}
+.addressbook{
+    background-color: white;
+    margin-top: 2px;
+    margin: 5% 50%;
+    text-align: right;
+}
+.infocolor {
+background-color: white;
+}
+.para{
+    border-bottom-style: solid ;
+    border-bottom-width: thin;
+    border-bottom-color: rgb(182, 178, 178);
+    padding: 5px;
+}
+
+*{
+    box-sizing: border-box;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*mobile first */
+[class*="col-"]{
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+#container {
+    padding: 20px;
+    margin-top: 50px;
+}
+#mini-nav{
+    display: -webkit-flex;
+    border-bottom: 2px solid #8e93bd;
+    float: none;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-around;
+}
+.nav-btns button{
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #8e93bd;
+}
+.nav-btns button:hover{
+    background-color: #8e93bd;
+    cursor: pointer;
+}
+.nav-btns button:active{
+    background-color:#63699b;
+}
+
+/* add contact */
+
+#add{
+    margin: 20px auto;
+}
+#add div{
+    margin: auto;
+    float: none;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: transparent;
+    border: 2px solid #8e93bd;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 40%;
+    background-color: transparent;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #8e93bd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #63699b;
+}
+.error{
+    color: red;
+    margin: 3px;
+    font-size: 14px;
+}
+#success{
+    font-size: 16px;
+    color: #8e93bd
+}
+
+/* view contact */
+.contact{
+    margin: auto;
+    float: none;
+    text-align: center;
+    border-bottom: 2px solid #8e93bd;
+    padding: 5px;
+}
+#view .name, #edit .name{
+    cursor: pointer;
+}
+#view .name:hover, #edit span:hover, #delete span:hover{
+    color: #8e93bd;
+}
+.hidemore{
+    display: none;
+}
+.more p{
+    color: rgb(11, 252, 11);
+}
+
+/* edit contact */
+#edit .name, #delete .name{
+    display: inline-block;
+    margin-right: 100px;
+}
+#edit span, #delete span{
+    cursor: pointer;
+}
